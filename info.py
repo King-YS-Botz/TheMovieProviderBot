@@ -51,7 +51,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want n
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb://radhakrishna:radhakrishna123@iad2-c17-0.mongo.objectrocket.com:53093,iad2-c17-1.mongo.objectrocket.com:53093,iad2-c17-2.mongo.objectrocket.com:53093/Clustor0?replicaSet=4389bf42c3df42f7a737b82b293c6718")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Clustor0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify
