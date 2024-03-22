@@ -50,7 +50,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb://radhakrishna:radhakrishna123@iad2-c17-0.mongo.objectrocket.com:53093,iad2-c17-1.mongo.objectrocket.com:53093,iad2-c17-2.mongo.objectrocket.com:53093/Clustor0?replicaSet=4389bf42c3df42f7a737b82b293c6718")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://moviebot:BxVA3RKFHOuyHHk8@cluster0.xq1aa8p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Clustor0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -69,8 +69,8 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/YS_Movvies')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/YS_BOTZ_UPDATE')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/YS_BOTZ_UPDATE/11') # Tutorial video link for opening shortlink website 
-IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ʜᴘ')
+IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : sɪʟɪᴄᴏɴ ʙᴏᴛᴢ')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002095836424')) #Log channel id ( make sure bot is admin )
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/YS_BOT_DISSCUSION') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
